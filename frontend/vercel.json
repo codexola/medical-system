@@ -3,5 +3,11 @@
   "framework": "nextjs",
   "installCommand": "npm install",
   "buildCommand": "npm run build",
-  "regions": ["hnd1"]
+  "regions": ["hnd1"],
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "http://210.131.217.208:8000/api/:path*"
+    }
+  ]
 }
