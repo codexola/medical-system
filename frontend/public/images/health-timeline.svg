@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#faf8f5"/>
+  <rect x="100" y="80" width="1000" height="500" rx="20" fill="white" stroke="#e2e8f0"/>
+  <polyline points="150,450 250,350 350,380 450,280 550,300 650,220 750,250 850,180 950,200 1050,150" fill="none" stroke="#1a365d" stroke-width="3"/>
+  <circle cx="250" cy="350" r="6" fill="#ffb7c5"/>
+  <circle cx="450" cy="280" r="6" fill="#7cb342"/>
+  <circle cx="650" cy="220" r="6" fill="#1a365d"/>
+  <text x="150" y="130" fill="#1a365d" font-size="20" font-family="sans-serif">Health Timeline</text>
+</svg>

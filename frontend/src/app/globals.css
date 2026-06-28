@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-sky: #f0f9ff;
+  --color-cream: #fffdf9;
+  --color-peach: #fb923c;
+  --color-mint: #34d399;
+  --color-primary: #0ea5e9;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background: linear-gradient(180deg, #fffdf9 0%, #f0f9ff 50%, #fff7ed 100%);
+  background-attachment: fixed;
+  color: #1e293b;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-serif-jp {
+  font-family: 'Noto Serif JP', serif;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary-400 to-primary-500 text-white px-6 py-3 rounded-2xl font-medium
+           hover:from-primary-500 hover:to-primary-600 transition-all duration-300
+           shadow-soft hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-primary-200 text-primary-600 px-6 py-3 rounded-2xl font-medium
+           bg-white hover:bg-primary-50 hover:border-primary-300 transition-all duration-300 shadow-sm;
+  }
+
+  .btn-peach {
+    @apply bg-gradient-to-r from-peach-300 to-peach-400 text-white px-6 py-3 rounded-2xl font-medium
+           hover:from-peach-400 hover:to-peach-500 shadow-soft transition-all;
+  }
+
+  .card {
+    @apply bg-white/90 backdrop-blur-sm rounded-3xl shadow-soft border border-white p-6
+           hover:shadow-lg transition-all duration-300;
+  }
+
+  .card-bright {
+    @apply bg-gradient-to-br from-white via-sky-50 to-peach-50/30 rounded-3xl
+           shadow-soft border border-white/80 p-6 hover:shadow-glow transition-all duration-300;
+  }
+
+  .card-hope {
+    @apply bg-gradient-to-br from-mint-50 via-white to-sunshine-50 rounded-3xl
+           border border-mint-100 p-6 shadow-soft;
+  }
+
+  .section-title {
+    @apply font-serif-jp text-3xl md:text-4xl font-bold text-primary-800 mb-3;
+  }
+
+  .section-label {
+    @apply inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase
+           text-peach-500 bg-peach-50 px-3 py-1 rounded-full mb-4;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3.5 bg-white border-2 border-primary-100 rounded-2xl
+           focus:ring-4 focus:ring-primary-100 focus:border-primary-300 outline-none
+           transition-all placeholder:text-slate-400;
+  }
+
+  .page-shell {
+    @apply min-h-screen;
+    background: linear-gradient(135deg, #fffdf9 0%, #f0f9ff 40%, #ecfdf5 100%);
+  }
+
+  .pattern-dots {
+    background-image: radial-gradient(circle, rgba(14, 165, 233, 0.06) 1.5px, transparent 1.5px);
+    background-size: 28px 28px;
+  }
+
+  .pattern-bright {
+    background: linear-gradient(135deg, #fffdf9 0%, #f0f9ff 50%, #fff7ed 100%);
+  }
+
+  .text-hope {
+    @apply text-primary-700 leading-relaxed;
+  }
+
+  .greeting-banner {
+    @apply relative overflow-hidden rounded-3xl shadow-soft border border-white min-h-[180px];
+  }
+
+  .sidebar-link {
+    @apply flex items-center gap-3 px-4 py-3 rounded-2xl text-sm font-medium transition-all duration-200;
+  }
+
+  .sidebar-link-active {
+    @apply bg-gradient-to-r from-primary-400 to-mint-400 text-white shadow-soft;
+  }
+
+  .sidebar-link-inactive {
+    @apply text-slate-600 hover:bg-white hover:text-primary-600 hover:shadow-sm;
+  }
+}
+
+@keyframes gentle-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.animate-gentle-float { animation: gentle-float 5s ease-in-out infinite; }
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up { animation: fade-up 0.5s ease-out forwards; }
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #f0f9ff; }
+::-webkit-scrollbar-thumb { background: #bae6fd; border-radius: 4px; }

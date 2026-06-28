@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#e8f4f8"/>
+  <rect x="200" y="100" width="800" height="475" rx="16" fill="#b8d4e3" opacity="0.5"/>
+  <circle cx="500" cy="300" r="12" fill="#c53030"/>
+  <circle cx="650" cy="250" r="10" fill="#c53030"/>
+  <circle cx="750" cy="350" r="10" fill="#c53030"/>
+  <circle cx="550" cy="400" r="8" fill="#2c5282"/>
+  <path d="M480 320 L520 320 L500 290 Z" fill="#1a365d"/>
+  <text x="600" y="580" text-anchor="middle" fill="#1a365d" font-size="18" font-family="sans-serif">Hospital Search Map</text>
+</svg>

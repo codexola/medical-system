@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <defs>
+    <pattern id="seigaiha" x="0" y="0" width="60" height="30" patternUnits="userSpaceOnUse">
+      <path d="M0 30 Q15 0 30 30 Q45 0 60 30" fill="none" stroke="white" stroke-width="1" opacity="0.15"/>
+      <path d="M0 30 Q15 15 30 30 Q45 15 60 30" fill="none" stroke="white" stroke-width="0.5" opacity="0.1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="675" fill="#1a365d"/>
+  <rect width="1200" height="675" fill="url(#seigaiha)"/>
+</svg>
